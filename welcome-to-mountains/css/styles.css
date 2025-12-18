@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b8e4f0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #333;
+}
+
+.top-container {
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    min-height: 60vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #000;
+}
+
+.mountain-img {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 20%;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 15%;
+    top: 300px;
+}
+
+nav.navbar {
+    background-color: #583e57;
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+nav a:link,
+nav a:visited {
+    background-color: #583e57; 
+    border: 2px solid #fff; 
+    border-radius: 0.5em;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #b8e4f0;
+    color: #583e57;
+    border-color: #583e57;
+}
+
+.large img {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .large {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav a:link, nav a:visited {
+        display: block;
+        width: 150px;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .top-cloud, .bottom-cloud {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .small {
+        display: none;
+    }
+    .large {
+        display: block;
+    }
+}
